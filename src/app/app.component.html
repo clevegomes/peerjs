@@ -1,0 +1,6 @@
+<h3>{{my_peer_id}}</h3>
+<input [(ngModel)]="remote_peer_id" >
+<input [(ngModel)]="my_message" >
+<button (click)="makeConnection()" >Connect</button>
+<button (click)="videoConnection()" >Video Connect</button>
+<video #myvideo></video>
