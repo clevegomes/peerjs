@@ -24,7 +24,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(){
 
-    this.peer = new Peer();
+    // this.peer = new Peer();
+    this.peer =new Peer('peerjs2', {host: 'bloovo.herokuapp.com', port: '', path: ''});
 
     let that = this;
     this.peer.on('open', function(id) {
